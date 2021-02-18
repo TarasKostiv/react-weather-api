@@ -1,0 +1,16 @@
+.clouds__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clouds__cloudiness {
+  margin: 0;
+}
+.clouds__icon {
+  height: 100px;
+}
+.clouds__txt {
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=clouds.css.map */

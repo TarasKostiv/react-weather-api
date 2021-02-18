@@ -1,0 +1,13 @@
+.temperature {
+  display: flex;
+  justify-content: center;
+}
+.temperature__temp {
+  font-size: 4em;
+  margin: 0;
+}
+.temperature__units {
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=tempterature.css.map */

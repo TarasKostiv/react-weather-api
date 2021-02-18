@@ -1,0 +1,13 @@
+.header-badge {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.header-badge__icon {
+  margin-right: 10px;
+}
+.header-badge__pict {
+  height: 30px;
+}
+
+/*# sourceMappingURL=headerBadge.css.map */

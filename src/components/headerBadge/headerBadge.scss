@@ -1,0 +1,12 @@
+.header-badge {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  &__icon{
+    margin-right: 10px;
+  }
+
+  &__pict{
+    height: 30px;
+  }
+}

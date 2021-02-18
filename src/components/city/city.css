@@ -1,0 +1,11 @@
+.city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.city__header {
+  margin: 0;
+  font-size: 2.4em;
+}
+
+/*# sourceMappingURL=city.css.map */
