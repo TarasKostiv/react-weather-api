@@ -1,5 +1,10 @@
 .temperature {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.temperature__content {
+  display: flex;
   justify-content: center;
 }
 .temperature__temp {
@@ -8,6 +13,9 @@
 }
 .temperature__units {
   font-size: 2em;
+}
+.temperature__feel {
+  font-size: 1.4em;
 }
 
 /*# sourceMappingURL=tempterature.css.map */

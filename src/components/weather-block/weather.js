@@ -41,13 +41,13 @@ class Weather extends Component {
                 {(typeof this.state.weather.main != 'undefined' ? (
                     <div className='weather__content'>
                         <header className="weather__header">
-                            <HeaderBadge value={`${weather.wind.deg}%`} icon={'cloud'}/>
+                            <HeaderBadge value={`${weather.clouds.all}%`} icon={'cloud'}/>
                             <HeaderBadge value={`${weather.wind.speed}${apiData.units === 'imperial' ? ('m/h') : ('m/s')}`} icon={'wind'}/>
                             <HeaderBadge value={`${weather.main.humidity}%`} icon={'tint'}/>
                         </header>
-                        <Temperature value={weather.main.temp} units={apiData.units === 'imperial' ? ('°F') : ('°C')}/>
-                        <City name={weather.name} country={weather.sys.country}/>
+                        <Temperature value={weather.main.temp} units={apiData.units === 'imperial' ? ('°F') : ('°C')} feelTemp={weather.main.feels_like}/>
                         <Clouds clouds={weather.clouds.all} descprition={weather}/>
+                        <City name={weather.name} country={weather.sys.country}/>
                     </div>
                 ) : (
                     <div className='weather__content'>
@@ -56,7 +56,7 @@ class Weather extends Component {
                             <HeaderBadge value={`---`} icon={'wind'}/>
                             <HeaderBadge value={`---`} icon={'tint'}/>
                         </header>
-                        <Temperature value={'---'} units={apiData.units === 'Imperial' ? ('°F') : ('°C')}/>
+                        <Temperature value={'---'} units={'-'}/>
                         <City name={'---'} country={'---'}/>
                         <Clouds clouds={'---'} />
                     </div>

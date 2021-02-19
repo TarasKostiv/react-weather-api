@@ -2,7 +2,7 @@ class weatherApi {
     apiData = {
         base: "https://api.openweathermap.org/data/2.5/weather",
         key: "0408b4f7a23f74b18e88d2d2dc5cebb4",
-        units: 'imperial'
+        units: 'metric'
     }
 
     async getWeather (city) {

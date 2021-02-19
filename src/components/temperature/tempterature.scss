@@ -1,6 +1,12 @@
 .temperature{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__content{
+    display: flex;
+    justify-content: center;
+  }
 
   &__temp{
     font-size: 4em;
@@ -9,5 +15,9 @@
 
   &__units{
     font-size: 2em;
+  }
+
+  &__feel{
+    font-size: 1.4em;
   }
 }
